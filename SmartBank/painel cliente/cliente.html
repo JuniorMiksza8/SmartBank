@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cliente.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Minha conta</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-smart static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo2.png" width="250px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-menu" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-menu" href="#">Usuario logado</a>
+                    </li>
+                    <li class="nav-item">
+                        <strong><a class="nav-link btn btn-light text-dark" href="#">Logoff</a></strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-3">
+        <div class="alert alert-success text-center" role="alert">
+            operação realizada com sucesso
+        </div>
+    </div>
+    <div class="container mt-1">
+        <div class="alert alert-danger text-center" role="alert">
+            erro ao efetuar operação
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 id="welcome">Bem vindo Usuario</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-smart p-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-md-6">
+
+                                <h6 id="welcome" class=" p-1 text-smart">Nome : </h6>
+                                <h6 id="welcome" class="mt-5 p-1 text-smart">Cpf : </h6>
+                                <h6 id="welcome" class="mt-5 p-1 text-smart">Data de nascimento :</h6>
+
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-6">
+
+                                <h6 class="mt-5" id="mobile-spacing"></h6>
+                                <h6 class="mt-2 text-smart" id="welcome"> Endereco : </h6>
+                                <h6 class="mt-5 mb-5 text-smart" id="welcome">Telefone : </h6>
+
+                                <a href="" class="text-smart">Trocar senha</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-12 col-md-12">
+                <div class="card border-smart">
+                    <div class="card-header bg-smart text-white ">
+                        <div class="form-inline">
+                            <h1>Saldo</h1>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-inline">
+                            <h1 class="mr-3" id="saldo">R$ 0.00</h1>
+                            <img src="images/kisspng-eye-computer-icons-clip-art-responsive-vector-5ad9be6419d181.1961868815242194921058.png"  id="btnHide" height="25px" width="25px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6">
+                <div class="card mt-5 border-smart">
+                    <div class="card-header bg-smart text-white">
+                        <h1>Extrato</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="container-flex">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card border-none">
+                                        <div class="container overflow-auto" style="height: 150px;">
+
+
+                                            <!-- For Extrato  compra-->
+
+                                            <div class="row cards-extrato">
+                                                <div class="col-6">
+                                                    <div class="form-inline">
+                                                        <img height="15px" width="15px"
+                                                            src="images/carrinho-de-compra-vetor-png-5.png">
+                                                        <h6 class="ml-2 mt-1">Lanchonete</h6>
+                                                    </div>
+                                                    <h6>-50.00</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h6 class="d-block float-right">28/01/2020</h6>
+                                                </div>
+                                            </div>
+
+                                            <!-- Ganhos -->
+
+                                            <div class="row cards-extrato mt-3">
+                                                <div class="col-6">
+                                                    <div class="form-inline">
+                                                        <img height="20px" width="20px"
+                                                            src="images/—Pngtree—money icon_4945926.png">
+                                                        <h6 class="ml-2 mt-1">Déposito</h6>
+                                                    </div>
+                                                    <h6>+50.00</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h6 class="d-block float-right">28/01/2020</h6>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- } -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-6">
+                <div class="card mt-5 border-smart" style="height: 274px;">
+                    <div class="card-header bg-smart text-white">
+                        <h1>Operações</h1>
+                    </div>
+                    <div class="card-body">
+
+                        <button class="btn-block btn bg-smart text-white mt-2" data-toggle="modal"
+                            data-target="#myModal">
+                            PAGAR CONTA
+                        </button>
+
+                        <button class="btn-block btn bg-smart text-white" data-toggle="modal"
+                            data-target="#ModalDeposito">
+                            DEPOSITAR
+                        </button>
+
+                        <button class="btn-block btn bg-smart text-white" data-toggle="modal"
+                        data-target="#ModalTransferencia">
+                            TRANSFERENCIAS
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-2 bg-smart text-white">
+                    <div class="container">
+                        <h1>Gráficos de transações</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div id="chart_div">
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div id="chart_ganhos">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagamento débito -->
+
+    <div id="myModal" class="modal fade " role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+                <div class="modal-header bg-smart">
+                    <h4 class="modal-title text-white">Pagamento</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center text-smart">
+                                <h4>Para realizar um pagamento preencha os campos</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <form action="google" method="POST">
+                                        <h6 class="text-smart" style="font-weight:bold;">Valor</h6>
+                                        <input type="text" style="color: #56097a;" class="form-control border-smart"
+                                            placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <h6 class="text-smart" style="font-weight:bold;">Descrição</h6>
+                                    <select style="color: #56097a;" class="form-control border-smart">
+                                        <option value="">Contas</option>
+                                        <option value="">Lazer</option>
+                                        <option value="">Transporte</option>
+                                        <option value="">Supermcado</option>
+                                        <option value="">Serviços</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-smart">
+
+                    <input type="hidden" name="acao" value="debitar">
+                    <button type="submit" class="btn btn-default bg-light text-smart"
+                        data-dismiss="modal">Confirmar</button>
+
+
+                    <button type="button" class="btn btn-default bg-light text-smart"
+                        data-dismiss="modal">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="ModalDeposito" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+                <div class="modal-header bg-smart">
+                    <h4 class="modal-title text-white">Deposito</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center text-smart">
+                                <h4>Para realizar um deposito preencha os campos</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <form action="google" method="POST">
+                                        <h6 class="text-smart" style="font-weight:bold;">Valor</h6>
+                                        <input type="text" style="color: #56097a;" class="form-control border-smart"
+                                            placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <h6 class="text-smart" style="font-weight:bold;">Descrição</h6>
+                                    <select style="color: #56097a;" class="form-control border-smart">
+                                        <option value="">Contas</option>
+                                        <option value="">Lazer</option>
+                                        <option value="">Transporte</option>
+                                        <option value="">Supermcado</option>
+                                        <option value="">Serviços</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-smart">
+
+                    <input type="hidden" name="acao" value="creditar">
+                    <button type="submit" class="btn btn-default bg-light text-smart"
+                        data-dismiss="modal">Confirmar</button>
+
+
+                    <button type="button" class="btn btn-default bg-light text-smart"
+                        data-dismiss="modal">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="ModalTransferencia" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+                <div class="modal-header bg-smart">
+                    <h4 class="modal-title text-white">Transferência</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center text-smart">
+                                <h4>Para realizar um deposito preencha os campos</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <form action="google" method="POST">
+                                        <h6 class="text-smart" style="font-weight:bold;">Valor</h6>
+                                        <input type="text" style="color: #56097a;" class="form-control border-smart"
+                                            placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <form action="google" method="POST">
+                                        <h6 class="text-smart" style="font-weight:bold;">Conta de destino</h6>
+                                        <input type="text" style="color: #56097a;" class="form-control border-smart"
+                                            placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <h6 class="text-smart" style="font-weight:bold;">Descrição</h6>
+                                    <select style="color: #56097a;" class="form-control border-smart">
+                                        <option value="">Contas</option>
+                                        <option value="">Lazer</option>
+                                        <option value="">Transporte</option>
+                                        <option value="">Supermcado</option>
+                                        <option value="">Serviços</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-smart">
+
+                    <input type="hidden" name="acao" value="creditar">
+                    <button type="submit" class="btn btn-default bg-light text-smart"
+                        data-dismiss="modal">Confirmar</button>
+
+
+                    <button type="button" class="btn btn-default bg-light text-smart"
+                        data-dismiss="modal">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="cliente.js"></script>
+</body>
+
+</html>

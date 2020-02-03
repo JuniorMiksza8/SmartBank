@@ -1,0 +1,55 @@
+.item-menu:hover{
+    border-bottom:1px solid white;
+}
+
+.bg-smart{
+    background-color: rgb(86, 9, 122);
+}
+
+.text-smart{
+    color: rgb(86, 9, 122);
+}
+
+input:focus,input:active,input::placeholder{
+    color: #56097a;
+}
+
+.border-smart{
+    border: 1px solid rgb(86, 9, 122);
+}
+
+#welcome{
+    border-bottom: 1px solid rgba(86,9,122);
+}
+#border-left{
+    border-left: 1px solid rgb(86, 9, 122);
+}
+#mobile-spacing{
+    display:none;
+}
+@media only screen and (max-width: 600px) {
+    #mobile-spacing{
+        display:block;
+    }
+}
+
+.cards-extrato{
+    border:none;
+    border-bottom:1px solid rgb(86, 9, 122);
+}
+
+.border-none{
+    border:none;
+}
+
+.overflow-auto{
+    overflow:auto;
+}
+#btn-logoff{
+    background-color: rgb(119, 9, 9);
+}
+
+.overflow-auto::-webkit-scrollbar { width:10px; background:#e3e0d6; } /* configurando scroll */
+.overflow-auto::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+.overflow-auto::-webkit-scrollbar-thumb { border-radius:10px; background:#56097a;  }
+

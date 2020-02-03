@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-smart static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../painel cliente/images/logo2.png" width="250px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-menu" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-menu" href="#">Usuario logado</a>
+                    </li>
+                    <li class="nav-item">
+                        <strong><a class="nav-link btn btn-light text-dark" href="#">Logoff</a></strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 ">
+                <div class="card border-smart pb-4">
+                    <div class="card-header bg-transparent">
+                        <h3 class="text-smart text-center">Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <div class="form-group">
+                                        <form action="#" method="post">
+                                        <label for="" class="text-smart">Usuario</label>
+                                        <input type="text" id="login" class="form-control border-smart text-smart">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="text-smart">Senha</label>
+                                        <input type="password" id="senha" class="form-control border-smart text-smart">
+                                    </div>
+                                    <a href="../Cadastro/cadastro.html" class="text-smart">Não possui conta?</a>
+                                    <button type="submit" class="btn bg-smart btn-block text-white mt-3">entrar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
